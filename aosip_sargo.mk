@@ -11,35 +11,34 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
- 
+
 # Include AOSiP common configuration
 include vendor/aosip/config/common_full_phone.mk
- 
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/bonito/aosp_sargo.mk)
- 
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
- 
+
 PRODUCT_NAME := aosip_sargo
 PRODUCT_DEVICE := sargo
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3a
 PRODUCT_MANUFACTURER := Google
- 
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sargo" \
     TARGET_DEVICE="sargo" \
-    PRIVATE_BUILD_DESC="sargo-user 10 QQ1A.200205.002 6084386 release-keys"
- 
-BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ1A.200205.002/6084386:user/release-keys"
- 
+    PRIVATE_BUILD_DESC="sargo-user 10 QQ2A.200305.002 6138846 release-keys"
+
+BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ2A.200305.002/6138846:user/release-keys"
+
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=google/sargo/sargo:10/QQ1A.200205.002/6084386:user/release-keys
- 
+    ro.build.fingerprint=google/sargo/sargo:10/QQ2A.200305.002/6138846:user/release-keys
+
 BOARD_PREBUILT_VENDORIMAGE := vendor/images/sargo/vendor.img
- 
+
 $(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
 $(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
- 
