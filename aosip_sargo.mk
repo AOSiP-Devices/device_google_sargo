@@ -31,9 +31,9 @@ PRODUCT_MANUFACTURER := Google
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="sargo" \
     TARGET_DEVICE="sargo" \
-    PRIVATE_BUILD_DESC="sargo-user 10 QQ2A.200405.005 6254899 release-keys"
+    PRIVATE_BUILD_DESC="sargo-user 10 QQ2A.200501.001.B2 6352890 release-keys"
 
-BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ2A.200405.005/6254899:user/release-keys"
+BUILD_FINGERPRINT := "google/sargo/sargo:10/QQ2A.200501.001.B2/6352890:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/sargo/sargo:10/QQ2A.200405.005 6254899:user/release-keys
