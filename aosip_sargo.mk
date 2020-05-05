@@ -39,3 +39,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=google/sargo/sargo:10/QQ2A.200405.005 6254899:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/sargo/sargo-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/bonito/bonito-vendor.mk)
